@@ -6,7 +6,7 @@
 1. [Setup - The basics of getting started with translate](#setup)
 1. [Usage - Configuration options and additional functionality](#usage)
 1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-    1. [Functions](#functions)
+  1. [Functions](#functions)
 1. [Limitations - OS compatibility, etc.](#limitations)
 1. [Development - Guide for contributing to the module](#development)
 1. [Contributors](#contributors)
@@ -25,7 +25,9 @@ puppet module install puppetlabs-translate
 ## Reference
 
 ### Functions
-#### translate
+#### `translate`
+Takes in a string and passes it to fast_gettext's _() function. Primarily used for 'marking' a string to be added to a .pot file.
+
 ```puppet
 fail(translate("Failure message"))
 ```
@@ -33,6 +35,17 @@ fail(translate("Failure message"))
 ## Limitations
 
 We do not yet support string interpolation or pluralization.
+
+```puppet
+# WRONG
+translate("Failure: #{message}")
+
+# WRONG
+translate("Failures: ...")
+
+# RIGHT
+translate("Failure: Could not load thing.")
+```
 
 ## Development
 
