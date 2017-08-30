@@ -38,10 +38,10 @@ We do not yet support string interpolation or pluralization.
 
 ```puppet
 # WRONG
-translate("Failure: #{message}")
+translate("Failure: ${message}")
 
 # WRONG
-translate("Failures: ...")
+translate("There is ${count} failure: ...", "There are ${count} failures: ...", num_failures)
 
 # RIGHT
 translate("Failure: Could not load thing.")
