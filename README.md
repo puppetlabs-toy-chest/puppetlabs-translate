@@ -13,7 +13,7 @@
 
 ## Module description
 
-This module provides the `translate` function for Puppet. Wrapping a string in this function will mark it to be picked up by gettext and put into the .pot file for translation purposes. Currently, we are **only marking failures, errors, and warnings** in Puppet Supported modules. However, feel free to do what you like with your own. 
+This module provides the `translate` function for Puppet. Wrapping a string in this function will mark it to be picked up by gettext and put into the .pot file for translation purposes. Currently, we are **only marking failures, errors, and warnings** in Puppet Supported modules. Feel free to do what you like with your own. 
 
 ## Setup
 
@@ -42,15 +42,6 @@ fail(translate('message is %{color}'), {'color' => 'green'})
 ## Limitations
 
 We do not yet support pluralization.
-
-```puppet
-
-# WRONG
-translate("There is ${count} failure: ...", "There are ${count} failures: ...", num_failures)
-
-# RIGHT
-translate("Failure: Could not load thing.")
-```
 
 ## Development
 
