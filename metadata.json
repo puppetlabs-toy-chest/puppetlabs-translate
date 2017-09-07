@@ -1,6 +1,6 @@
 {
   "name": "puppetlabs-translate",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": "puppetlabs",
   "summary": "Puppet module that provides the translate() function for internationalization.",
   "license": "Apache-2.0",
