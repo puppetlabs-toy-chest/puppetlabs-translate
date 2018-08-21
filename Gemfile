@@ -35,7 +35,6 @@ group :development do
   gem "puppet-module-win-dev-r#{minor_version}",       require: false, platforms: [:mswin, :mingw, :x64_mingw]
 end
 group :system_tests do
-  gem "beaker", *location_for(ENV['BEAKER_VERSION'] || '~> 3.13')
 end
 
 puppet_version = ENV['PUPPET_GEM_VERSION']
