@@ -12,3 +12,6 @@ appveyor.yml:
 Gemfile:
   required:
     ':system_tests':
+      - gem: beaker-hostgenerator
+        from_env: BEAKER_HOSTGENERATOR_VERSION
+      - gem: nokogiri
