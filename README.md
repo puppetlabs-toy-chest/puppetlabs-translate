@@ -3,13 +3,12 @@
 #### Table of Contents
 
 1. [Module Description - What the module does and why it is useful](#module-description)
-1. [Setup - The basics of getting started with translate](#setup)
-1. [Usage - Configuration options and additional functionality](#usage)
-1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-  1. [Functions](#functions)
-1. [Limitations - OS compatibility, etc.](#limitations)
-1. [Development - Guide for contributing to the module](#development)
-1. [Contributors](#contributors)
+2. [Setup - The basics of getting started with translate](#setup)
+3. [Usage - Configuration options and additional functionality](#usage)
+4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
+5. [Limitations - OS compatibility, etc.](#limitations)
+6. [Development - Guide for contributing to the module](#development)
+7. [Contributors](#contributors)
 
 ## Module description
 
@@ -24,20 +23,7 @@ puppet module install puppetlabs-translate
 
 ## Reference
 
-### Functions
-#### `translate` with simple strings
-Takes in a string and passes it to fast_gettext's _() function. Primarily used for 'marking' a string to be added to a .pot file.
-
-```puppet
-fail(translate("Failure message"))
-```
-
-#### `translate` with interpolation
-Takes in a string and a hash. Please note that variables in the message are wrapped with %{VAR} not ${VAR}. The hash contains key value pairs with marker and the variable it will be assigned to. The translate module passes it to fast_gettext's _() function. Primarily used for 'marking' a string to be added to a .pot file.
-
-```puppet
-fail(translate('message is %{color}'), {'color' => 'green'})
-```
+For information on the classes and types, see the [REFERENCE.md](https://github.com/puppetlabs/puppetlabs-translate/blob/master/REFERENCE.md)
 
 ## Limitations
 
