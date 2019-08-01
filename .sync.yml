@@ -7,18 +7,12 @@
   unmanaged: true
 
 .travis.yml:
-  branches:
-    - release 
+  unmanaged: true
 
 appveyor.yml:
   delete: true
 
 Gemfile:
-  required:
-    ':system_tests':
-      - gem: beaker-hostgenerator
-        from_env: BEAKER_HOSTGENERATOR_VERSION
-      - gem: nokogiri
   optional:
     ':development':
       - gem: 'github_changelog_generator'
