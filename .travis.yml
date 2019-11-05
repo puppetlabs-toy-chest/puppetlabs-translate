@@ -55,6 +55,7 @@ matrix:
       rvm: 2.5.3
       script: ["bundle exec rake litmus:acceptance:parallel"]
       services: docker
+      stage: acceptance
       sudo: required
     -
       before_script: ["bundle exec rake 'litmus:provision_list[travis_el]'", "bundle exec rake 'litmus:install_agent[puppet5]'", "bundle exec rake litmus:install_module"]
@@ -64,6 +65,7 @@ matrix:
       rvm: 2.5.3
       script: ["bundle exec rake litmus:acceptance:parallel"]
       services: docker
+      stage: acceptance
       sudo: required
     -
       before_script: ["bundle exec rake 'litmus:provision_list[travis_el]'", "bundle exec rake 'litmus:install_agent[puppet6]'", "bundle exec rake litmus:install_module"]
@@ -73,6 +75,7 @@ matrix:
       rvm: 2.5.3
       script: ["bundle exec rake litmus:acceptance:parallel"]
       services: docker
+      stage: acceptance
       sudo: required
 branches:
   only:
