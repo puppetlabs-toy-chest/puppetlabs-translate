@@ -63,6 +63,10 @@
     sudo: required
     stage: acceptance
   simplecov: true
+  notifications:
+    slack:
+      secure: >-
+        NeHtAtZH+/xvLTp04VMI5PqKa7EhoZD4xipzbV/BeA8xMxuwW70K3KsgkTJNsUojnLJwM4Ypn1s9F+nNRymHm+4qwFNeSG/mZYMMsNs9x6Do6PMSWYR1Q6ICoJ4q4hYW50x0+F04SMYyfU8cYzh7k9JuDyyqgQFtzjG3CZDWUgq17JVhqutIhkYv4geiRnbJcLcPUtW1vPPD8vN7ugeCG7wZxPoT/aAGE5UIuoU3Sdlur93R4XpU7+TcY02bWj0mARC4GK4eRlPgyj6hNOG4fhQRkgGxhwJwxMzOvNIDkziLN2ce9NOH4vSykv3uzTLTwr8RmSDyLYL91b/jms2dTfc0JG5D7nCAP2W4m4X2dE+olP0aTLFHysL3Wck4dyqrElNQaYFg0KNc8n3n6z2ldPxYWyuCGbYt51eOIcxJwXy08NfgnzYhUBL6bnr0cq7JAW//EaHX949x/6UPApyvOk3jSSQf8AngEcRfSydXXAH0cGa6iQRFkbGcy4KqLvGBjMudMKGzb63wuo4GuAU5hppOhW6g+L2U3C9NefhZd9FNNM6JR/bUWEC6roRMt17PZyK407CuTVai0oxGVHbTJTOXdEXFhnIHf35lurCTdCWeKNCzFJUVwOHTGVZ1bP44L9cqNiZ16lG+KJfJdk3uvaY3715eY29u0Y9S51zu7s4=
 appveyor.yml:
   delete: true
 Gemfile:
