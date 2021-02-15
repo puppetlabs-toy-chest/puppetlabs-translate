@@ -1,3 +1,7 @@
+This module is no [longer maintained](http://unmaintained.tech/) by Puppet.
+
+----
+
 # translate
 
 #### Table of Contents
